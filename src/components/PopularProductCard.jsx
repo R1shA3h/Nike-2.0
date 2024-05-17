@@ -1,4 +1,5 @@
 import { star } from "../assets/icons";
+import Button from "@mui/material/Button";
 
 const PopularProductCard = ({ imgURL, name, price }) => {
   return (
@@ -16,6 +17,8 @@ const PopularProductCard = ({ imgURL, name, price }) => {
       <p className='mt-2 font-semibold font-montserrat text-coral-red text-2xl leading-normal'>
         {price}
       </p>
+      <Button variant="outlined" className="w-auto" >Add to cart </Button>
+      <Button variant="outlined" className=" w-auto" >Buy Now</Button>
     </div>
   );
 };
